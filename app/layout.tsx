@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import { GoogleTagManager } from '@next/third-parties/google'
 
 import './globals.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,17 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
+        <header>
+          <nav>
+            <ul>
+              <li>
+                <Link href='/'>Home</Link>
+                <Link href='/about'>About</Link>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
         <main>{children}</main>
         <GoogleTagManager gtmId='GTM-WBM4N32P' />
       </body>
