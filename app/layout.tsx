@@ -20,11 +20,13 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <header>
-          <nav>
-            <ul>
+        <header className='py-6'>
+          <nav className='container'>
+            <ul className='flex gap-8'>
               <li>
                 <Link href='/'>Home</Link>
+              </li>
+              <li>
                 <Link href='/about'>About</Link>
               </li>
             </ul>
