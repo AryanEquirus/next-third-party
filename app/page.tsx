@@ -1,7 +1,6 @@
 'use client'
 
 import { sendGTMEvent } from '@next/third-parties/google'
-import { YouTubeEmbed } from '@next/third-parties/google'
 
 export default function Home() {
   return (
@@ -23,11 +22,6 @@ export default function Home() {
 
         <section className='mt-12'>
           <h2 className='mb-4 text-xl font-semibold'>YouTube Embed</h2>
-          <YouTubeEmbed
-            height={400}
-            videoid='Pz8CAbeg6Q0'
-            params='controls=0'
-          />
         </section>
       </div>
     </section>
